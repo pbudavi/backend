@@ -19,7 +19,7 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v3
         with:
-          node-version: '18.x'  # Ensure this is specified as '20.x' for the latest version
+          node-version: '20.x'  # Ensure this is specified as '20.x' for the latest version
 
       - name: npm install, build, and test
         run: |
@@ -35,6 +35,6 @@ jobs:
           app-name: 'webanalytics'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5C7828DE3198441FB4FD81EE01B0C994 }}
-          package: .
+          package: ./backend
 
 
