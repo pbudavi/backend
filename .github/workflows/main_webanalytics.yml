@@ -35,6 +35,6 @@ jobs:
           app-name: 'webanalytics'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5C7828DE3198441FB4FD81EE01B0C994 }}
-          package: ./backend
+          package: .
 
 
